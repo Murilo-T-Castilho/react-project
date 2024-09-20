@@ -1,0 +1,87 @@
+#hero {
+    background: var(--light-gray);
+    border-top: 0.125rem solid #e4e4e4;
+    height: 90vh;
+    display: flex;
+    overflow-y: hidden;
+}
+
+#hero>img {
+    position: absolute;
+    right: 0;
+    height: 60%;
+    padding-left: 30%;
+}
+
+#hero p {
+    color: var(--second-text-color);
+}
+
+
+#hero .content {
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+    text-align: center;
+    gap: 1.75rem;
+}
+
+#hero .content>div {
+    width: fit-content;
+    align-self: center;
+    margin-bottom: 20%;
+}
+
+.colorido {
+    background: linear-gradient(to right, var(--color-beginning), var(--color-end));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    font-weight: bold;
+}
+
+@media (width >=1280px) {
+    #hero {
+        background: var(--bg-color);
+        border-top: none;
+
+        >span {
+            position: absolute;
+            top: 0;
+        }
+
+        >img {
+            top: 0;
+            height: 82%;
+            padding-left: 55%;
+
+        }
+    }
+}
+
+@media (max-width: 1280px) {
+
+    h1 {
+        font-size: 1.5rem;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+    #hero .content {
+
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        margin-top: auto;
+        margin-right: 15%;
+        text-align: center;
+        gap: 1.75rem;
+    }
+
+    .container {
+        margin-left: auto;
+    }
+}

@@ -1,0 +1,138 @@
+#coiso {
+    background: var(--light-gray);
+    border-top: 0.125rem solid #e4e4e4;
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto; 
+}
+
+#coiso .container {
+    text-align: center;
+    padding: var(--py-lg);
+}
+
+#coiso h3 {
+    color: var(--primary-color);
+    font-size: var(--fs-lg);
+    font-weight: var(--fw-bold);
+}
+
+#coiso h1 {
+    font-size: var(--fs-2xl);
+    margin: var(--py-sm) 0;
+    font-weight: var(--fw-bold);
+}
+
+#coiso header p {
+    font-size: var(--fs-base);
+    color: var(--second-text-color);
+}
+
+#coiso .colorido {
+    background: linear-gradient(to right, var(--color-beginning), var(--color-end));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    font-weight: var(--fw-bold);
+}
+
+#coiso .products {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: var(--py-base);
+}
+
+#coiso .product-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: var(--py-lg);
+    width: 90%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: var(--py-base);
+    text-align: center;
+}
+
+#coiso .product-card h2 {
+    color: var(--text-color);
+    margin-bottom: var(--py-sm);
+    font-size: var(--fs-xl);
+}
+
+#coiso .product-card p {
+    color: var(--second-text-color);
+    font-size: var(--fs-base);
+}
+
+#coiso .icon {
+    font-size: 2em;
+    margin-bottom: var(--py-sm);
+    color: var(--primary-color);
+}
+
+#coiso img {
+    width: 5em;
+    opacity: 0;
+}
+
+#coiso .icone-1,
+#coiso .icone-2,
+#coiso .icone-3 {
+    width: 5rem;
+    height: 5rem;
+    margin: 0 auto var(--py-base);
+    background: linear-gradient(to right, var(--color-beginning), var(--color-end));
+    -webkit-mask-size: cover;
+    mask-size: cover;
+}
+
+#coiso .icone-1 {
+    -webkit-mask-image: url("../assets/codebar.svg");
+    mask-image: url("../assets/codebar.svg");
+}
+
+#coiso .icone-2 {
+    -webkit-mask-image: url("../assets/bank.svg");
+    mask-image: url("../assets/bank.svg");
+}
+
+#coiso .icone-3 {
+    -webkit-mask-image: url("../assets/human.svg");
+    mask-image: url("../assets/human.svg");
+}
+
+@media (min-width: 1280px) {
+    #coiso .products {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    #coiso .product-card {
+        width: 30%;
+        text-align: left;
+    }
+
+    .no-scroll {
+        overflow: hidden;
+    }
+    
+    #coiso .icone-1,
+    #coiso .icone-2,
+    #coiso .icone-3 {
+        margin-left: 32.5%;
+    }
+}
+
+@media (max-width: 1280px) {
+    #coiso h1 {
+        font-size: 1.5rem;
+    }
+    .no-scroll {
+        overflow: hidden;
+    }
+}
+
+
